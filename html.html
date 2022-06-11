@@ -1,0 +1,189 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+
+    <div class="nav">
+      <ul><span>Menu</span>
+        <li onclick="panel(1)">Menu 1</li>
+        <li onclick="panel(1)">Menu 2</li>
+        <li onclick="panel(1)">Menu 3</li>
+      </ul>
+    </div>
+
+    <section>
+      <div class="card" id="panel"></div>
+      <div class="card">
+        <div class="card-head">
+          Titulos de pagina
+        </div>
+        <div class="card-body">
+          <h1>Titulo de pagina</h1>
+          <h2>Titulo de pagina</h2>
+          <h3>Titulo de pagina</h3>
+          <h4>Titulo de pagina</h4>
+          <h5>Titulo de pagina</h5>
+          <h6>Titulo de pagina</h6>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          Listas de datos
+        </div>
+        <div class="card-body">
+          <b>Lista desordenada</b>
+          <ul class="blue underline">
+            <li>Opcion 1</li>
+            <li>Opcion 2</li>
+            <li>Opcion 3</li>
+          </ul>
+          <b>Lista ordenada</b>
+          <ol class="green underline">
+            <li>Opcion 1</li>
+            <li>Opcion 2</li>
+            <li>Opcion 3</li>
+          </ol>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          Botones
+        </div>
+        <div class="card-body">
+          <button class="boton default">Default</button>
+          <button class="boton primary">Default</button>
+          <button class="boton success">Default</button>
+          <button class="boton danger">Default</button>
+          <button class="boton warning">Default</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          Botones
+        </div>
+        <div class="card-body">
+          <b>Select de opciones normales</b><br>
+          <select class="input" name="opcionNormal">
+            <option value="1">Opcion 1</option>
+            <option value="2">Opcion 2</option>
+            <option value="3">Opcion 3</option>
+          </select>
+          <br><br>
+          <b>Select de opciones multiples</b><br>
+          <select class="input" multiple name="opcionNormal">
+            <option value="1">Opcion 1</option>
+            <option value="2">Opcion 2</option>
+            <option value="3">Opcion 3</option>
+            <option value="4">Opcion 4</option>
+            <option value="5">Opcion 5</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          Campos de texto 
+        </div>
+        <div class="card-body">
+          <input type="text" class="input" placeholder="Solo para texto" />
+          <input type="password" class="input" placeholder="Solo para las contraseñas" />
+          <input type="email" class="input" placeholder="Solo para correos electronicos" />
+          <input type="number" class="input" placeholder="Solo para números" />
+          <textarea class="input" placeholder="Textarea es un campo en el que se puede escribir descripciones largas"></textarea>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          Botones para selección 
+        </div>
+        <div class="card-body">
+          <b>Para seleccion multiple</b><br>
+          <input type="radio" name="radio" value="1"/> Opcion 1<br>
+          <input type="radio" name="radio" value="2"/> Opcion 1<br>
+          <input type="radio" name="radio" value="3"/> Opcion 1<br><br>
+          <b>Para seleccion individual</b><br>
+          <input type="checkbox" name="checkbox" value="1"/> Opcion 1<br>
+          <input type="checkbox" name="checkbox" value="2"/> Opcion 1<br>
+          <input type="checkbox" name="checkbox" value="3"/> Opcion 1<br>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          Tabla para ordenar datos 
+        </div>
+        <div class="card-body">
+          <table border="1" class="table">
+            <tr>
+              <td class="th">Titulo 1</td>
+              <td class="th">Titulo 2</td>
+              <td class="th">Titulo 3</td>
+              <td class="th">Titulo 4</td>
+            </tr>
+            <tr>
+              <td class="tb">Dato 1</td>
+              <td class="tb">Dato 2</td>
+              <td class="tb">Dato 3</td>
+              <td class="tb">Dato 4</td>
+            </tr>
+            <tr>
+              <td class="tb">Dato 5</td>
+              <td class="tb">Dato 6</td>
+              <td class="tb">Dato 7</td>
+              <td class="tb">Dato 8</td>
+            </tr>
+            <tr>
+              <td class="tb">Dato 9</td>
+              <td class="tb">Dato 10</td>
+              <td class="tb">Dato 11</td>
+              <td class="tb">Dato 12</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          Alertas 
+        </div>
+        <div class="card-body">
+          <div class="alerta alerta-primary">
+            Alerta primary
+          </div>
+          <div class="alerta alerta-success">
+            Alerta success 
+          </div>
+          <div class="alerta alerta-danger">
+            Alerta danger 
+          </div>
+          <div class="alerta alerta-warning">
+            Alerta warning 
+          </div>
+          <div class="alerta alerta-default">
+            Alerta default 
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          Alertas 
+        </div>
+        <div class="card-body">
+          <div class="alerta alerta-primary" id="alertaPrimaria">
+            Alerta primary
+            <button class="cerrar-alerta boton primary" 
+              onclick="cerrarAlerta('alertaPrimaria')" id="cerrarAlerta">&nbsp;X&nbsp;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js.js"></script>
+  </body>
+</html>

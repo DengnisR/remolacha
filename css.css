@@ -1,0 +1,220 @@
+/* Usualmente siempre se pone al principio esto
+ * para que no tenga los border de la pagina que
+ * trae por defecto
+ */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  border-radius: 10px;
+  border: solid 2px #474747;
+  width: 350px;
+  /* el height auto se adapta segun lo que
+   * necesite, esto no sirve con el width
+   * porque el width depende del ancho de
+   * la pantalla--
+   */
+  height: auto;
+  margin: 5px;
+}
+.card-head {
+  padding: 0.5em;
+  /* Peso de la fuente-- es como negrita-- */
+  font-weight: bold;
+  /* se puede hacer border con todos los lados, 
+   * bottom, abajo
+   * top, arriba
+   * left, izquierda
+   * right, derecha
+   */
+  border-bottom: solid 2px #474747;
+}
+.card-body {
+  /* el em es una medida que estara siempre
+   * en el mismo tamaño no importa el tamaño
+   * de la pantalla o del zoom de la misma
+   * muy util para dispositivos responsive,
+   * o celulares--
+   */
+  padding: 0.5em;
+}
+
+.blue {
+  color: #03a9f4;
+}
+
+.green {
+  color: #81c784;
+}
+
+.underline:hover {
+  /* el :hover despues de una declaracion ya hecha,
+   * sirve para cuando se pasa el mouse encima de
+   * la etiqueta que tiene esta clase, asi podemos
+   * quitar el underline, que esta en la lista
+   * al pasar el mouse encima de este--
+   */
+  text-decoration: none;
+}
+
+.underline {
+  /* el underline sirve para colocar una linea
+   * debajo del texto deseado, por eso se coloca
+   * con text-decoration, porque es para decorar
+   * el texto--
+   */
+  text-decoration: underline;
+}
+
+.boton {
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+/* usualmente se da un salto de linea
+ * para saber que las siguientes instrucciones
+ * son hijas de la que esta anterior--
+ * por eso es que se puede llamar boton default
+ * en la clase del html y agarra las que se llame--
+ */
+  .default {
+    background-color: #d0d0d0;
+    color: #343434;
+  }
+
+  .success {
+    background-color: #4caf50;
+    color: #2a612c  }
+
+  .danger {
+    background-color: #ffc107;
+    color: #6b571b;
+  }
+
+  .warning {
+    background-color: #e91e63;
+    color: #700e2f;
+  }
+
+  .primary {
+    background-color: #2196f3;
+    color: #135a91;
+  }
+
+.input {
+  /* se pueden definir tanto margins como rights
+   * en el sentido horario para los lados de los
+   * mismos-- top, right, botton y left--
+   */
+  margin: 3px 0 3px 0;
+  padding: 5px;
+  /* se puede graduar el tamaño de la fuente
+   * con font-size-- como lo indica el nombre--
+   */
+  font-size: 15px;
+  border: solid 3px #89acc8;
+  border-radius: 5px;
+}
+
+.th {
+  color: #1e1e1e;
+}
+
+.tb {
+  color: #616161
+}
+
+.alerta {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  font-weight: bolder;
+  display: inline-block;
+  width: 90%;
+}
+
+  .alerta-default {
+    background-color: #d0d0d0;
+    border: solid 1px #343434;
+    color: #343434;
+  }
+
+  .alerta-success {
+    background-color: #4caf50;
+    border: solid 1px #2a612c;
+    color: #2a612c;
+  }
+
+  .alerta-danger {
+    background-color: #ffc107;
+    border: solid 1px #6b571b;
+    color: #6b571b;
+  }
+
+  .alerta-warning {
+    background-color: #e91e63;
+    border: solid 1px #700e2f;
+    color: #700e2f;
+  }
+
+  .alerta-primary {
+    background-color: #2196f3;
+    border: solid 1px #135a91;
+    color: #135a91;
+  }
+
+  .cerrar-alerta {
+    float: right;
+  }
+
+.nav {
+  display: inline-block;
+  position: fixed;
+  top: 0px;
+  background-color: #2196f3;
+  color: white;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+}
+
+.nav ul {
+  width: 200px;
+  padding: 15px;
+  margin: 0;
+}
+
+.nav ul:hover {
+  height: 100vw;
+  background-color: #2196f3;
+}
+
+.nav ul:hover span {
+  font-weight: bolder;
+}
+
+.nav ul:hover li {
+  background-color: #2196f3;
+  display: block;
+  width: 200px;
+  position: relative;
+  right: 15px;
+  top: 15px;
+}
+
+.nav ul li:hover {
+  background-color: #4dabf5;
+}
+
+.nav ul li {
+  display: none;
+  padding: 15px;
+  margin: 0;
+  width: 200px;
+}
+
+section {
+  margin: 70px 10px 10px 10px;
+}
